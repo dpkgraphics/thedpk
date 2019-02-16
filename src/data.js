@@ -40,3 +40,9 @@ export const data = [{
   description: 'name 8 description',
   image: wagImage
 }];
+
+export const bio = {
+  name: 'Daniel Kinsella',
+  description: 'bio description',
+  image: 'some'
+}
