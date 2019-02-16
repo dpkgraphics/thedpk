@@ -2,31 +2,215 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+
+
+/* h1, h2 {
+	margin: 0 0 5px 0;
+	font-size: 1.75rem;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 small,
+h1 .small,
+h2 small,
+h2 .small {
+	font-weight: bold;
+	color: #afafaf;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+	color: #afafaf;
+	font-size: 0.9rem;
+	line-height: 1.75;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-primary {
+	color: #76c7e9;
 }
+
+.feature-text-bold {
+	color: #5e5f61;
+	font-weight: bold;
+}
+
+.text-default {
+	color: #afafaf;
+}
+
+hr {
+	border-top: 1px solid #cdcdcd;
+    box-shadow: 0px 1px 1px white;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+hr.partial {
+	width: 8%;
+	display: inline-block;
+}
+
+hr.vertical {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	hr.vertical {
+		border-right: 1px solid #cdcdcd;
+	    box-shadow: 1px 0px 1px white;;
+	    margin-top: 0;
+	    height: 100%;
+	    position: absolute;
+	    left: 0;
+	    display: block;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	hr.partial {
+	    display: none !important;
+	}
+}
+
+.navbar-dpk {
+    overflow: visible;
+    background: url(../images/dpk-branded-circles.png) repeat-x;
+    background-position-y: -330px;
+    min-height: 125px;
+    background-repeat: no-repeat;
+    max-width: 1400px;
+    margin: auto;
+    border: 0;
+}
+.navbar-brand-dpk {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.navbar-toggle-dpk {
+    border: 0;
+    margin-right: 10px;
+    color: #5e5f61;
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+        background: none !important;
+    }
+}
+.navbar-nav.nav-dpk {
+    margin: auto;
+}
+.navbar-nav.nav-dpk > li > a {
+    color: #5e5f61;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding-left: 0;
+    line-height: 2;
+    background: none !important;
+    text-shadow: none;
+}
+.navbar-nav.nav-dpk > .active > a,
+.navbar-nav.nav-dpk > li > a:hover,
+.navbar-nav.nav-dpk > li > a:focus {
+    color: #afafaf !important;
+}
+.navbar-collapse.navbar-collapse-dpk {
+    border: 0;
+    box-shadow: none;
+    background-color: white;
+}
+@media (min-width: 768px) {
+    .navbar-collapse.navbar-collapse-dpk {
+        background: none;
+    }
+}
+
+html, body {
+	font-size: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: url(../images/dpk-header-repeat.jpg) repeat-x;
+	background-color: #e7e7e7;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+	color: #5e5f61;
+	text-shadow: 1px 2px 0 white;
+}
+
+a {
+	color: #76c7e9;
+	text-decoration: none;
+	&:hover,
+	&:active,
+	&:focus {
+		color: #afafaf;
+		text-decoration: none;
+		outline: none;
+		-moz-outline-style:none;
+	}
+}
+
+.main-container {
+	width: 100%;
+    background: url(../images/dpk-grey-circles.png) repeat-x;
+    background-position: top center;
+}
+
+.inner-container {
+	max-width: 1200px;
+    margin: auto;
+    float: none;
+}
+
+.main-wrapper {
+	margin-top: 75px;
+}
+
+.gallery-block img {
+    display: inline-block;
+    margin-bottom: -30px;
+}
+
+.section-block {
+	max-width: 1000px;
+	margin: 30px auto;
+}
+
+.tag-block {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.title-block {
+	padding-top: 45px;
+	padding-bottom: 15px;
+}
+
+.about-block {
+	background-color: #e7e7e7;
+	margin: 0 auto;
+	background: url(../images/dpk-footer-repeat.jpg) repeat;
+}
+
+.tag-caption {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 480px) {
+	.main-container {
+	    background-position: -50px 0;
+	    background-size: 250%;
+	}
+}
+
+@media (min-width: 768px) {
+	.title-block {
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+} */
