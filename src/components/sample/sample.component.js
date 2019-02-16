@@ -30,7 +30,6 @@ class Sample extends Component {
     const { classes } = this.props;
     return (
       <div key={ index }>
-
         <div>
           <img
             src={ sample.image }
