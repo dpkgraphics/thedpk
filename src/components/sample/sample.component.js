@@ -34,7 +34,7 @@ class Sample extends Component {
           <img
             src={ sample.image }
             className={ classes.imgFluid }
-            alt="DPK client work"/>
+            alt="DPKgraphics :: A Digital Company"/>
         </div>
         <Typography variant="h3" gutterBottom>
           { sample.name }
@@ -57,13 +57,13 @@ class Sample extends Component {
     } = header;
 
     return (
-      <div className={classes.root}>
-        <Grid container spacing={24}>
+      <div className={ classes.root }>
+        <SectionHead
+          icon={ icon }
+          title={ title }
+        />
+      <Grid container>
           <Grid item xs={12}>
-            <SectionHead
-              icon={ icon }
-              title={ title }
-            />
             { this.renderSamples() }
           </Grid>
         </Grid>
