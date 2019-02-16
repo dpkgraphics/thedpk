@@ -1,10 +1,10 @@
 {
-  "main.css": "/thedpk/static/css/main.d294e0bf.chunk.css",
-  "main.js": "/thedpk/static/js/main.d7835544.chunk.js",
-  "main.js.map": "/thedpk/static/js/main.d7835544.chunk.js.map",
+  "main.css": "/thedpk/static/css/main.0fe5f403.chunk.css",
+  "main.js": "/thedpk/static/js/main.97bd5359.chunk.js",
+  "main.js.map": "/thedpk/static/js/main.97bd5359.chunk.js.map",
   "static/css/1.dc266ef4.chunk.css": "/thedpk/static/css/1.dc266ef4.chunk.css",
-  "static/js/1.d71751c4.chunk.js": "/thedpk/static/js/1.d71751c4.chunk.js",
-  "static/js/1.d71751c4.chunk.js.map": "/thedpk/static/js/1.d71751c4.chunk.js.map",
+  "static/js/1.b6822d5e.chunk.js": "/thedpk/static/js/1.b6822d5e.chunk.js",
+  "static/js/1.b6822d5e.chunk.js.map": "/thedpk/static/js/1.b6822d5e.chunk.js.map",
   "runtime~main.js": "/thedpk/static/js/runtime~main.d50394b5.js",
   "runtime~main.js.map": "/thedpk/static/js/runtime~main.d50394b5.js.map",
   "static/media/dpk-grey-circles.png": "/thedpk/static/media/dpk-grey-circles.d7757ffe.png",
@@ -19,9 +19,9 @@
   "static/media/dpk-footer-profile.png": "/thedpk/static/media/dpk-footer-profile.223b6871.png",
   "static/media/App.css": "/thedpk/static/media/dpk-header-repeat.b166003f.jpg",
   "static/media/index.css": "/thedpk/static/media/roboto-latin-900italic.bc833e72.woff",
-  "static/css/main.d294e0bf.chunk.css.map": "/thedpk/static/css/main.d294e0bf.chunk.css.map",
+  "static/css/main.0fe5f403.chunk.css.map": "/thedpk/static/css/main.0fe5f403.chunk.css.map",
   "static/css/1.dc266ef4.chunk.css.map": "/thedpk/static/css/1.dc266ef4.chunk.css.map",
   "index.html": "/thedpk/index.html",
-  "precache-manifest.2e62ef3b6c8d229aac88617a15f5a6d6.js": "/thedpk/precache-manifest.2e62ef3b6c8d229aac88617a15f5a6d6.js",
+  "precache-manifest.8fc2aa1af59b41cc6ca294aff0a82c58.js": "/thedpk/precache-manifest.8fc2aa1af59b41cc6ca294aff0a82c58.js",
   "service-worker.js": "/thedpk/service-worker.js"
 }
