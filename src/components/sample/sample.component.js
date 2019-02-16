@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import sampleCircles from '../../images/dpk-grey-circles.png';
 
 const styles = {
   root: {
     flexGrow: 1,
+    backgroundImage: `url(${sampleCircles})`,
+    backgroundRepeat: 'repeat-x',
+    backgroundPosition: 'top center',
+    backgroundPositionY: '310px',
   },
   imgFluid: {
     maxWidth: '100%',

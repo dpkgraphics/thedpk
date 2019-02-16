@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background: url(./images/dpk-header-repeat.jpg) repeat-x;
+  background-color: #e7e7e7;
+  color: #5e5f61;
+  text-shadow: 1px 2px 0 white;
 }
 
 
@@ -74,21 +78,7 @@ hr.vertical {
 	}
 }
 
-.navbar-dpk {
-    overflow: visible;
-    background: url(../images/dpk-branded-circles.png) repeat-x;
-    background-position-y: -330px;
-    min-height: 125px;
-    background-repeat: no-repeat;
-    max-width: 1400px;
-    margin: auto;
-    border: 0;
-}
-.navbar-brand-dpk {
-    width: 150px;
-    margin-top: 15px;
-    margin-left: 20px;
-}
+
 .navbar-toggle-dpk {
     border: 0;
     margin-right: 10px;

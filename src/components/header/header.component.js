@@ -10,7 +10,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import headerCircles from '../../images/dpk-branded-circles.png';
 import logo from '../../images/logo.png';
 import Button from '@material-ui/core/Button';
-import SaveIcon from '@material-ui/icons/Save';
+import BlurOn from '@material-ui/icons/BlurOn';
+import Work from '@material-ui/icons/Work';
+import AccountCircle from '@material-ui/icons/AccountCircle';
 import classNames from 'classnames';
 
 const styles = theme => ({
@@ -103,28 +105,28 @@ class Header extends Component {
               className={ classes.logo }
               alt="DPKgraphics :: A Digital Company"
               />
-            <div className={classes.grow} />
-            <div className={classes.sectionDesktop}>
-              <Button size="small" className={classes.button} color="inherit">
-                <SaveIcon
-                  className={classNames(classes.leftIcon)}
+            <div className={ classes.grow } />
+            <div className={ classes.sectionDesktop }>
+              <Button size="small" className={ classes.button } color="inherit">
+                <BlurOn
+                  className={ classNames(classes.leftIcon) }
                 />
                 Brand Experience
               </Button>
-              <Button size="small" className={classes.button} color="inherit">
-                <SaveIcon
-                  className={classNames(classes.leftIcon)}
+              <Button size="small" className={ classes.button } color="inherit">
+                <Work
+                  className={ classNames(classes.leftIcon) }
                 />
                 The Work
               </Button>
-              <Button size="small" className={classes.button} color="inherit">
-                <SaveIcon
-                  className={classNames(classes.leftIcon)}
+              <Button size="small" className={ classes.button } color="inherit">
+                <AccountCircle
+                  className={ classNames(classes.leftIcon) }
                 />
                 About Me
               </Button>
             </div>
-            <div className={classes.sectionMobile}>
+            <div className={ classes.sectionMobile }>
               <IconButton
                 aria-haspopup="true"
                 onClick={ this.handleMobileMenuOpen }
