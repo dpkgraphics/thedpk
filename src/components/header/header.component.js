@@ -6,13 +6,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import MailIcon from '@material-ui/icons/Mail';
 import headerCircles from '../../images/dpk-branded-circles.png';
 import logo from '../../images/logo.png';
 import Button from '@material-ui/core/Button';
-import BlurOn from '@material-ui/icons/BlurOn';
-import Work from '@material-ui/icons/Work';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import classNames from 'classnames';
 
 const styles = theme => ({
@@ -72,14 +68,53 @@ class Header extends Component {
     this.props.handleMobileMenuClose();
   }
 
-  render() {
+  renderNavItem = (item, index) => {
+    const { classes } = this.props;
+    return (
+      <Button
+        key={ index }
+        size="small"
+        className={ classes.button }
+        color="inherit">
+        <span
+          className={ classNames(classes.leftIcon) }
+          >
+          { item.icon }
+        </span>
+        { item.title }
+      </Button>
+    )
+  }
+
+  renderMenuItem = (item, index) => {
+    return (
+      <MenuItem
+        key={ index }
+        onClick={ this.handleMobileMenuClose }>
+        <IconButton color="inherit">
+          { item.icon }
+        </IconButton>
+        <p>{ item.title }</p>
+      </MenuItem>
+    )
+  }
+
+  renderNavItems() {
+    const { navItems } = this.props;
+    return navItems.map(this.renderNavItem);
+  }
+
+  renderMenuItems() {
+    const { navItems } = this.props;
+    return navItems.map(this.renderMenuItem);
+  }
+
+  renderMobileMenu = () => {
     const {
       mobileMoreAnchorEl,
-      isMobileMenuOpen,
-      classes
-    } = this.props
-
-    const renderMobileMenu = (
+      isMobileMenuOpen
+    } = this.props;
+    return (
       <Menu
         anchorEl={ mobileMoreAnchorEl }
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
@@ -87,14 +122,15 @@ class Header extends Component {
         open={ isMobileMenuOpen }
         onClose={ this.handleMenuClose }
       >
-        <MenuItem onClick={ this.handleMobileMenuClose }>
-          <IconButton color="inherit">
-            <MailIcon />
-          </IconButton>
-          <p>Messages</p>
-        </MenuItem>
+      { this.renderMenuItems() }
       </Menu>
-    );
+    )
+  }
+
+  render() {
+    const {
+      classes
+    } = this.props
 
     return (
       <div className={classes.root}>
@@ -107,24 +143,7 @@ class Header extends Component {
               />
             <div className={ classes.grow } />
             <div className={ classes.sectionDesktop }>
-              <Button size="small" className={ classes.button } color="inherit">
-                <BlurOn
-                  className={ classNames(classes.leftIcon) }
-                />
-                Brand Experience
-              </Button>
-              <Button size="small" className={ classes.button } color="inherit">
-                <Work
-                  className={ classNames(classes.leftIcon) }
-                />
-                The Work
-              </Button>
-              <Button size="small" className={ classes.button } color="inherit">
-                <AccountCircle
-                  className={ classNames(classes.leftIcon) }
-                />
-                About Me
-              </Button>
+              { this.renderNavItems() }
             </div>
             <div className={ classes.sectionMobile }>
               <IconButton
@@ -136,7 +155,7 @@ class Header extends Component {
             </div>
           </Toolbar>
         </AppBar>
-        { renderMobileMenu }
+        { this.renderMobileMenu() }
         <Toolbar className={ classes.customToolBar }>
         </Toolbar>
       </div>

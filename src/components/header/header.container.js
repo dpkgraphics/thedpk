@@ -1,5 +1,19 @@
 import React, { Component } from 'react';
 import Header from './header.component.js';
+import BlurOn from '@material-ui/icons/BlurOn';
+import Work from '@material-ui/icons/Work';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+
+const navItems = [{
+  title: 'Brand Experience',
+  icon: <BlurOn/>
+}, {
+  title: 'The Work',
+  icon: <Work/>
+}, {
+  title: 'About Me',
+  icon: <AccountCircle/>
+}]
 
 class HeaderContainer extends Component {
   state = {
@@ -31,6 +45,7 @@ class HeaderContainer extends Component {
 
     return (
       <Header
+        navItems={ navItems }
         anchorEl={ anchorEl }
         mobileMoreAnchorEl={ mobileMoreAnchorEl }
         isMenuOpen={ isMenuOpen }
