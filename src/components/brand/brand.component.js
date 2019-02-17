@@ -3,13 +3,16 @@ import SectionHead from '../../shared/sectionHead.component.js';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import BlurOn from '@material-ui/icons/BlurOn';
+import sampleCircles from '../../images/dpk-grey-circles.png';
+
 
 const styles = {
   root: {
     flexGrow: 1,
-    padding: '12px',
-    margin: '0 auto',
-    maxWidth: '700px'
+    backgroundImage: `url(${sampleCircles})`,
+    backgroundRepeat: 'repeat-x',
+    backgroundPosition: 'top center',
+    backgroundPositionY: '0px',
   },
   imgFluid: {
     maxWidth: '100%',
@@ -52,12 +55,16 @@ class Brand extends Component {
 
     return (
       <div className={ classes.root }>
-        <SectionHead
-          icon={ icon }
-          title={ title }
-        />
-        <Grid container spacing={24}>
-          { this.renderBrands() }
+        <Grid container justify="center">
+          <Grid item xs={8}>
+            <SectionHead
+              icon={ icon }
+              title={ title }
+            />
+            <Grid container>
+              { this.renderBrands() }
+            </Grid>
+          </Grid>
         </Grid>
       </div>
     )

@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import sampleCircles from '../../images/dpk-grey-circles.png';
 import SectionHead from '../../shared/sectionHead.component.js';
 import Work from '@material-ui/icons/Work';
 
 const styles = {
   root: {
-    flexGrow: 1,
-    backgroundImage: `url(${sampleCircles})`,
-    backgroundRepeat: 'repeat-x',
-    backgroundPosition: 'top center',
-    backgroundPositionY: '310px',
+    flexGrow: 1
   },
   imgFluid: {
     maxWidth: '100%',
@@ -45,10 +40,12 @@ class Sample extends Component {
       </div>
     )
   }
+
   renderSamples() {
     const { data } = this.props;
     return data.map(this.renderSample)
   }
+
   render() {
     const { classes } = this.props;
     const {
@@ -62,7 +59,7 @@ class Sample extends Component {
           icon={ icon }
           title={ title }
         />
-      <Grid container>
+        <Grid container>
           <Grid item xs={12}>
             { this.renderSamples() }
           </Grid>
