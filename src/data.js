@@ -17,36 +17,44 @@ import brandWalgreens from './images/dpk-brands-walgreens.png';
 import brandMcdonalds from './images/dpk-brands-mcdonalds.png';
 
 export const data = [{
-  name: 'name 1',
-  description: 'name 1 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: caImage
 }, {
-  name: 'name 2',
-  description: 'name 2 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: csImage
 }, {
-  name: 'name 3',
-  description: 'name 3 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: dtImage
 }, {
-  name: 'name 4',
-  description: 'name 4 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: lrImage
 }, {
-  name: 'name 5',
-  description: 'name 5 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: tviImage
 }, {
-  name: 'name 6',
-  description: 'name 6 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: udImage
 }, {
-  name: 'name 7',
-  description: 'name 7 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: waImage
 }, {
-  name: 'name 8',
-  description: 'name 8 description',
+  project: 'Branding + Webesite',
+  client: 'Crescendo Apparel',
+  description: 'Custom wordpress theme :: HTML5, Css3, Jquery, and PHP',
   image: wagImage
 }];
 
