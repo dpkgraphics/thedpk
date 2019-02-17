@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import Divider from '@material-ui/core/Divider';
 
 const styles = {
   root: {
     flexGrow: 1,
     textTransform: 'uppercase',
-    fontWeight: '800',
-    color: '#afafaf',
     paddingTop: '40px',
     paddingBottom: '40px'
   },
@@ -20,6 +19,18 @@ const styles = {
   small: {
     color: '#afafaf',
     fontSize: '1.3rem'
+  },
+  gray: {
+    color: '#afafaf',
+    fontWeight: '800',
+  },
+  hr: {
+    boxShadow: '0px 1px 1px white',
+    width: '5%',
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    marginLeft: '2px',
+    marginRight: '2px'
   }
 };
 
@@ -38,8 +49,10 @@ class Tag extends Component {
           program <span className={ classes.small }>&</span> interact<br/>
         <span className={ classes.small }>and</span> we do it well.
         </Typography>
-        <Typography variant="subtitle2" gutterBottom>
-          DPKgraphics :: A digital company
+        <Typography variant="subtitle2" className={ classes.gray } gutterBottom>
+          <Divider className={ classes.hr } />
+            DPKgraphics :: A digital company
+          <Divider className={ classes.hr } />
         </Typography>
       </div>
     )

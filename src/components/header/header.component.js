@@ -52,6 +52,7 @@ const styles = theme => ({
   },
   leftIcon: {
     marginRight: theme.spacing.unit,
+    lineHeight: 1
   }
 });
 

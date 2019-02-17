@@ -5,6 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import BlurOn from '@material-ui/icons/BlurOn';
 
 const styles = {
+  root: {
+    flexGrow: 1,
+    padding: '12px',
+    margin: '0 auto',
+    maxWidth: '700px'
+  },
   imgFluid: {
     maxWidth: '100%',
     height: 'auto'
