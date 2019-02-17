@@ -6,28 +6,21 @@ const styles = {
   root: {
     flexGrow: 1,
     textTransform: 'uppercase',
-    fontWeight: '700',
+    fontWeight: '800',
     color: '#afafaf',
+    letterSpacing: '-1px'
   },
   tag: {
     fontWeight: '800',
     color: '#76c7e9',
     fontSize: '1.75rem',
-    lineHeight: 1
+    lineHeight: 0.96,
   },
   small: {
     color: '#afafaf',
-    fontSize: 'smaller'
+    fontSize: '1.3rem'
   }
 };
-
-
-// margin: 0 0 5px 0;
-//     font-size: 1.75rem;
-//     line-height: 1;
-//     text-transform: uppercase;
-//     font-weight: bold;
-//
 
 class Tag extends Component {
   render() {
