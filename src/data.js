@@ -7,6 +7,15 @@ import udImage from './images/dpk-client-ud-website.png';
 import waImage from './images/dpk-client-wa-website.png';
 import wagImage from './images/dpk-client-wag-website.png';
 
+import brandADP from './images/dpk-brands-adp.png';
+import brandSears from './images/dpk-brands-sears.png';
+import brandLevy from './images/dpk-brands-levyrestaurants.png';
+import brandNationalCity from './images/dpk-brands-nationalcity.png';
+import brandHyatt from './images/dpk-brands-hyatt.png';
+import brandSiemens from './images/dpk-brands-siemens.png';
+import brandWalgreens from './images/dpk-brands-walgreens.png';
+import brandMcdonalds from './images/dpk-brands-mcdonalds.png';
+
 export const data = [{
   name: 'name 1',
   description: 'name 1 description',
@@ -40,3 +49,21 @@ export const data = [{
   description: 'name 8 description',
   image: wagImage
 }];
+
+export const brand = [{
+  image: brandADP
+}, {
+  image: brandSears
+}, {
+  image: brandLevy
+}, {
+  image: brandNationalCity
+}, {
+  image: brandHyatt
+}, {
+  image: brandSiemens
+}, {
+  image: brandWalgreens
+}, {
+  image: brandMcdonalds
+}]
