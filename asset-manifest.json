@@ -1,7 +1,7 @@
 {
   "main.css": "/thedpk/static/css/main.deed8a35.chunk.css",
-  "main.js": "/thedpk/static/js/main.1a350c1d.chunk.js",
-  "main.js.map": "/thedpk/static/js/main.1a350c1d.chunk.js.map",
+  "main.js": "/thedpk/static/js/main.1633e487.chunk.js",
+  "main.js.map": "/thedpk/static/js/main.1633e487.chunk.js.map",
   "static/css/1.7609e14e.chunk.css": "/thedpk/static/css/1.7609e14e.chunk.css",
   "static/js/1.dd54335d.chunk.js": "/thedpk/static/js/1.dd54335d.chunk.js",
   "static/js/1.dd54335d.chunk.js.map": "/thedpk/static/js/1.dd54335d.chunk.js.map",
@@ -30,6 +30,6 @@
   "static/css/main.deed8a35.chunk.css.map": "/thedpk/static/css/main.deed8a35.chunk.css.map",
   "static/css/1.7609e14e.chunk.css.map": "/thedpk/static/css/1.7609e14e.chunk.css.map",
   "index.html": "/thedpk/index.html",
-  "precache-manifest.f3f3793ccd4bc823ef7d0f4b7cc12cea.js": "/thedpk/precache-manifest.f3f3793ccd4bc823ef7d0f4b7cc12cea.js",
+  "precache-manifest.db2c8165398382f52a03c55c1e230cb3.js": "/thedpk/precache-manifest.db2c8165398382f52a03c55c1e230cb3.js",
   "service-worker.js": "/thedpk/service-worker.js"
 }
