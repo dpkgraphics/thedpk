@@ -8,12 +8,13 @@ const styles = {
     textTransform: 'uppercase',
     fontWeight: '800',
     color: '#afafaf',
-    letterSpacing: '-1px'
+    paddingTop: '40px',
+    paddingBottom: '40px'
   },
   tag: {
     fontWeight: '800',
     color: '#76c7e9',
-    fontSize: '1.75rem',
+    fontSize: '1.76rem',
     lineHeight: 0.96,
   },
   small: {
@@ -37,7 +38,7 @@ class Tag extends Component {
           program <span className={ classes.small }>&</span> interact<br/>
         <span className={ classes.small }>and</span> we do it well.
         </Typography>
-        <Typography variant="body" gutterBottom>
+        <Typography variant="subtitle2" gutterBottom>
           DPKgraphics :: A digital company
         </Typography>
       </div>
