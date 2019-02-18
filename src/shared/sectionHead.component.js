@@ -8,10 +8,15 @@ const styles = {
     flexGrow: 1,
     textTransform: 'uppercase',
     paddingTop: '40px',
-    paddingBottom: '40px',
+    paddingBottom: '25px',
   },
   hr: {
     boxShadow: '0px 1px 1px white',
+    width: '5%',
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    marginLeft: '2px',
+    marginRight: '2px'
   },
   tag: {
     fontWeight: '800',
@@ -36,9 +41,10 @@ class SectionHead extends Component {
           { icon }
         </Typography>
         <Typography variant="h5" className={ classes.tag }>
-          { title }
+          <Divider className={ classes.hr } />
+            { title }
+          <Divider className={ classes.hr } />
         </Typography>
-        <Divider className={ classes.hr } />
       </div>
     )
   }

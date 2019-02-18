@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import BlurOn from '@material-ui/icons/BlurOn';
 import sampleCircles from '../../images/dpk-grey-circles.png';
 
-
 const styles = {
   root: {
     flexGrow: 1,
@@ -36,7 +35,7 @@ class Brand extends Component {
         <img
           src={ brand.image }
           className={ classes.imgFluid }
-          alt="DPKgraphics :: A Digital Company"/>
+          alt={ brand.name }/>
       </Grid>
     )
   }

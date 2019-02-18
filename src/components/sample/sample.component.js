@@ -13,8 +13,8 @@ const styles = {
     marginBottom: '30px'
   },
   block: {
-    marginTop: '-20px',
-    marginBottom: '20px'
+    marginTop: '-25px',
+    marginBottom: '25px'
   },
   imgFluid: {
     maxWidth: '100%',
@@ -66,12 +66,14 @@ class Sample extends Component {
           <Typography
             variant="h5"
             className={ classes.tag }
+            gutterBottom
             >
             { sample.client }
           </Typography>
           <Typography
             variant="subtitle2"
             className={ classes.description }
+            gutterBottom
             >
             <Divider className={ classes.hr } />
             { sample.description }
