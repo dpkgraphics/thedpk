@@ -13,7 +13,7 @@ const styles = {
     marginBottom: '30px'
   },
   block: {
-    marginTop: '-25px',
+    marginTop: '-10px',
     marginBottom: '25px'
   },
   imgFluid: {
@@ -37,6 +37,7 @@ const styles = {
   description: {
     color: '#afafaf',
     fontWeight: '800',
+    lineHeight: 0.96
   },
 };
 
@@ -54,7 +55,7 @@ class Sample extends Component {
           <img
             src={ sample.image }
             className={ classes.imgFluid }
-            alt="DPKgraphics :: A Digital Company"/>
+            alt={ sample.client }/>
         </div>
         <div className={ classes.block }>
           <Typography

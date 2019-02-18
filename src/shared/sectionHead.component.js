@@ -20,7 +20,8 @@ const styles = {
   },
   tag: {
     fontWeight: '800',
-    color: '#afafaf'
+    color: '#afafaf',
+    display: 'inline'
   },
   gray: {
     color: '#afafaf',
@@ -40,11 +41,11 @@ class SectionHead extends Component {
         <Typography gutterBottom className={ classes.gray }>
           { icon }
         </Typography>
+        <Divider className={ classes.hr } />
         <Typography variant="h5" className={ classes.tag }>
-          <Divider className={ classes.hr } />
-            { title }
-          <Divider className={ classes.hr } />
+          { title }
         </Typography>
+        <Divider className={ classes.hr } />
       </div>
     )
   }

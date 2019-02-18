@@ -31,7 +31,8 @@ class Brand extends Component {
       <Grid
         key={ index }
         item
-        xs={4}>
+        xs={6}
+        sm={4}>
         <img
           src={ brand.image }
           className={ classes.imgFluid }

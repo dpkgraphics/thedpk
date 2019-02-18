@@ -23,7 +23,7 @@ export const data = [{
   image: caImage
 }, {
   project: 'Branding + Website + Development',
-  client: 'Chop\'t craetive salad company',
+  client: 'Chop\'t creative salad company',
   description: 'Wireframing :: Photoshop skins :: Flash :: As3',
   image: csImage
 }, {
