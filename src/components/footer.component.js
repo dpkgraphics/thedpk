@@ -24,8 +24,13 @@ const styles = theme => ({
 const mailTo = 'mailto:daniel.kinsella2004@gmail.com';
 
 class Footer extends Component {
+  renderYear() {
+    return <div>{(new Date().getFullYear())}</div>;
+  }
+
   render() {
     const { classes } = this.props;
+    const year = this.renderYear();
     return (
       <div className={ classes.root }>
         <Typography
@@ -33,7 +38,7 @@ class Footer extends Component {
           gutterBottom
           className={ classes.content }
         >
-          Copyright &copy; 2017 DPKgraphics. All Rights Reserved. Charleston, SC :: 773 240 7711 ::
+          Copyright &copy; { year.props.children } DPKgraphics. All Rights Reserved. Charleston, SC :: 773 240 7711 ::
           <Link href={ mailTo } className={ classes.link }>
             connect@dpkgraphics.com
           </Link>
