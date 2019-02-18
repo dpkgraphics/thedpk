@@ -54,6 +54,9 @@ const styles = theme => ({
   leftIcon: {
     marginRight: theme.spacing.unit,
     lineHeight: 1
+  },
+  menuButton: {
+    color: '#5e5f61'
   }
 });
 
@@ -66,12 +69,9 @@ class Header extends Component {
     this.props.handleMobileMenuOpen(event);
   }
 
-  handleMobileMenuClose = () => {
+  scrollTo = (event, link) => {
+    this.props.scrollTo(link);
     this.props.handleMobileMenuClose();
-  }
-
-  scrollTo(event, link) {
-    this.props.scrollTo(link)
   }
 
   renderNavItem = (item, index) => {
@@ -98,10 +98,16 @@ class Header extends Component {
   }
 
   renderMenuItem = (item, index) => {
+    const { classes } = this.props;
     return (
       <MenuItem
+        className={ classes.menuButton }
         key={ index }
-        onClick={ this.handleMobileMenuClose }>
+        onClick={ (event) => this.scrollTo(event, item.link) }
+        spy="true"
+        smooth="true"
+        duration={500}
+      >
         <IconButton color="inherit">
           { item.icon }
         </IconButton>
@@ -145,7 +151,10 @@ class Header extends Component {
 
     return (
       <div className={classes.root}>
-        <AppBar className={ classes.customAppBar } color="default">
+        <AppBar
+          className={ classes.customAppBar }
+          color="default"
+        >
           <Toolbar className={ classes.customToolBar }>
             <img
               src={ logo }
@@ -160,7 +169,8 @@ class Header extends Component {
               <IconButton
                 aria-haspopup="true"
                 onClick={ this.handleMobileMenuOpen }
-                color="inherit">
+                className={ classes.menuButton }
+              >
                 <MenuIcon />
               </IconButton>
             </div>
