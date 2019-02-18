@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Divider from '@material-ui/core/Divider';
 
-const styles = {
+const styles = theme => ({
   root: {
     textAlign: 'left',
     flexGrow: 1,
@@ -29,7 +29,10 @@ const styles = {
     marginRight: '25px',
     width: '1px',
     height: '100%',
-    float: 'left'
+    float: 'left',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
   content: {
     color: '#a2a2a2'
@@ -45,7 +48,7 @@ const styles = {
       textDecoration: 'none'
     }
   }
-};
+});
 
 const urlFile = '../images/DanielKinsellaResume2019.pdf';
 const mailTo = 'mailto:daniel.kinsella2004@gmail.com';
@@ -57,7 +60,7 @@ class Bio extends Component {
     return (
       <div id="about-me" className={ classes.root }>
         <Grid container spacing={24}>
-          <Grid item xs={4} md={3}>
+          <Grid item xs={12} sm={4} md={3}>
             <img
               src={ bioImage }
               className={ classes.imgFluid }
@@ -71,7 +74,7 @@ class Bio extends Component {
               Consultant :: Daniel Kinsella
             </Typography>
           </Grid>
-          <Grid item xs={8} md={6}>
+          <Grid item xs={12} sm={8} md={6}>
             <Divider className={ classes.hr } />
             <Typography
               variant="h5"
