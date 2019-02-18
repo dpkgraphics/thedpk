@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DPKgraphics",
+  "name": "A Digital Company",
+  "author": "Daniel Kinsella",
+  "email": "daniel.kinsella2004@gmail.com",
   "icons": [
     {
       "src": "favicon.ico",
