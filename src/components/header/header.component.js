@@ -70,6 +70,10 @@ class Header extends Component {
     this.props.handleMobileMenuClose();
   }
 
+  scrollTo(event, link) {
+    this.props.scrollTo(link)
+  }
+
   renderNavItem = (item, index) => {
     const { classes } = this.props;
     return (
@@ -77,7 +81,12 @@ class Header extends Component {
         key={ index }
         size="small"
         className={ classes.button }
-        color="inherit">
+        color="inherit"
+        onClick={ (event) => this.scrollTo(event, item.link) }
+        spy="true"
+        smooth="true"
+        duration={500}
+      >
         <span
           className={ classNames(classes.leftIcon) }
           >

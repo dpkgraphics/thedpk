@@ -54,7 +54,7 @@ class Brand extends Component {
     } = header;
 
     return (
-      <div className={ classes.root }>
+      <div id="brand-experience" className={ classes.root }>
         <Grid container justify="center">
           <Grid item xs={8}>
             <SectionHead

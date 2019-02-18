@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Sample from './sample.component.js';
+import Work from './work.component.js';
 import { data } from '../../data.js';
 
-class SampleContainer extends Component {
+class WorkContainer extends Component {
   render() {
     return (
-      <Sample
+      <Work
         data={ data }
         />
     )
   }
 }
 
-export default SampleContainer;
+export default WorkContainer;

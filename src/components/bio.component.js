@@ -32,7 +32,7 @@ const styles = {
     float: 'left'
   },
   content: {
-    color: '#afafaf'
+    color: '#a2a2a2'
   },
   imgFluid: {
     maxWidth: '100%',
@@ -55,7 +55,7 @@ class Bio extends Component {
     const { classes } = this.props;
 
     return (
-      <div className={ classes.root }>
+      <div id="about-me" className={ classes.root }>
         <Grid container spacing={24}>
           <Grid item xs={4} md={3}>
             <img

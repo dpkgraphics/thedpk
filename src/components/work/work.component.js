@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import SectionHead from '../../shared/sectionHead.component.js';
-import Work from '@material-ui/icons/Work';
+import WorkIcon from '@material-ui/icons/Work';
 import Divider from '@material-ui/core/Divider';
 
 const styles = {
@@ -42,11 +42,11 @@ const styles = {
 };
 
 const header = {
-  icon: <Work/>,
+  icon: <WorkIcon/>,
   title: 'Some of the work created'
 }
 
-class Sample extends Component {
+class Work extends Component {
   renderSample = (sample, index) => {
     const { classes } = this.props;
     return (
@@ -98,7 +98,7 @@ class Sample extends Component {
     } = header;
 
     return (
-      <div className={ classes.root }>
+      <div id="the-work" className={ classes.root }>
         <Grid container justify="center">
           <Grid item xs={8}>
             <SectionHead
@@ -115,4 +115,4 @@ class Sample extends Component {
   }
 }
 
-export default withStyles(styles)(Sample);
+export default withStyles(styles)(Work);

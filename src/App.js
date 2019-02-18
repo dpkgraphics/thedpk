@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BrandContainer from './components/brand/brand.container.js';
 import HeaderContainer from './components/header/header.container.js';
-import SampleContainer from './components/sample/sample.container.js';
+import WorkContainer from './components/work/work.container.js';
 import Bio from './components/bio.component.js';
 import Intro from './components/intro.component.js';
 import Footer from './components/footer.component.js';
@@ -17,7 +17,7 @@ class App extends Component {
         <Tag/>
         <Intro/>
         <BrandContainer/>
-        <SampleContainer/>
+        <WorkContainer/>
         <Bio/>
         <Tag/>
         <Footer/>

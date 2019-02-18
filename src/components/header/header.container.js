@@ -3,14 +3,18 @@ import Header from './header.component.js';
 import BlurOn from '@material-ui/icons/BlurOn';
 import Work from '@material-ui/icons/Work';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import { scroller } from 'react-scroll'
 
 const navItems = [{
+  link: 'brand-experience',
   title: 'Brand Experience',
   icon: <BlurOn/>
 }, {
+  link: 'the-work',
   title: 'The Work',
   icon: <Work/>
 }, {
+  link: 'about-me',
   title: 'About Me',
   icon: <AccountCircle/>
 }]
@@ -18,8 +22,17 @@ const navItems = [{
 class HeaderContainer extends Component {
   state = {
     anchorEl: null,
-    mobileMoreAnchorEl: null,
+    mobileMoreAnchorEl: null
   };
+
+  scrollTo(link) {
+    scroller.scrollTo(link, {
+      duration: 800,
+      delay: 0,
+      offset: -50,
+      smooth: 'easeInOutQuart'
+    })
+  }
 
   handleProfileMenuOpen = event => {
     this.setState({ anchorEl: event.currentTarget });
@@ -45,6 +58,7 @@ class HeaderContainer extends Component {
 
     return (
       <Header
+        scrollTo={ this.scrollTo }
         navItems={ navItems }
         anchorEl={ anchorEl }
         mobileMoreAnchorEl={ mobileMoreAnchorEl }
