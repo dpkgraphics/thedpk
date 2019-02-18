@@ -13,7 +13,7 @@ import classNames from 'classnames';
 
 const styles = theme => ({
   root: {
-    width: '100%',
+    width: '100%'
   },
   customAppBar: {
     overflow: 'visible',
@@ -49,6 +49,7 @@ const styles = theme => ({
   },
   button: {
     margin: theme.spacing.unit,
+    color: '#5e5f61'
   },
   leftIcon: {
     marginRight: theme.spacing.unit,

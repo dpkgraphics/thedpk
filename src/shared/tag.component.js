@@ -49,7 +49,7 @@ class Tag extends Component {
           program <span className={ classes.small }>&</span> interact<br/>
         <span className={ classes.small }>and</span> we do it well.
         </Typography>
-        <Typography variant="subtitle2" className={ classes.gray } gutterBottom>
+        <Typography variant="subtitle2" className={ classes.gray }>
           <Divider className={ classes.hr } />
             DPKgraphics :: A digital company
           <Divider className={ classes.hr } />
