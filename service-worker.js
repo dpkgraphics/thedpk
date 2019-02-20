@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dpkgraphics/precache-manifest.3ebe56ec4eca0e60ed06f58f19b863fa.js"
+  "/thedpk/precache-manifest.75276963964ffc7e3eda16cc44d50b39.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/dpkgraphics/index.html", {
+workbox.routing.registerNavigationRoute("/thedpk/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
